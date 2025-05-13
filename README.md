@@ -1,9 +1,7 @@
 Here’s a README.md template for your project that explains the setup, structure, and usage of the infrastructure. You can modify or add additional details as needed.
 
 README.md
-markdown
-Copy
-Edit
+
 # AWS Web Infrastructure Project
 
 This project demonstrates how to set up a basic AWS web infrastructure using **Terraform**, **Ansible**, **Python**, and **Linux scripts**. It provisions an EC2 instance, installs Nginx, and deploys a Flask web application. It also integrates with monitoring, logging, and backup automation.
@@ -38,9 +36,6 @@ aws-web-infra-project/
 │ └── cron_setup.sh # Set up cron jobs for regular tasks
 └── README.md # Project documentation
 
-markdown
-Copy
-Edit
 
 ## Setup Instructions
 
@@ -66,15 +61,10 @@ Edit the variables.tf file to include your AWS credentials, VPC, subnet IDs, and
 
 Initialize Terraform:
 
-bash
-Copy
-Edit
+
 terraform init
 Apply the Terraform plan to provision the infrastructure:
 
-bash
-Copy
-Edit
 terraform apply
 Terraform will create an EC2 instance and a security group, among other resources.
 
@@ -85,9 +75,7 @@ Update the inventory.ini file with the public IP of the EC2 instance created by 
 
 Run the Ansible playbook to install Nginx, the Flask app, and start the services:
 
-bash
-Copy
-Edit
+
 ansible-playbook -i inventory.ini playbook.yml
 Step 4: Python Script Automation
 The Python scripts are designed for monitoring and backup purposes:
@@ -105,9 +93,7 @@ cron_setup.sh: Sets up cron jobs for health checks and log rotation.
 
 To set up the cron jobs, simply run the cron_setup.sh script:
 
-bash
-Copy
-Edit
+
 bash linux-scripts/cron_setup.sh
 Monitoring and Logging
 The project integrates log monitoring using Python and Linux scripts.
@@ -125,8 +111,7 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 sql
-Copy
-Edit
+
 
 ### Steps to Add the `README.md` to Your Repository:
 
