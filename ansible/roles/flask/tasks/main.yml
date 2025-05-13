@@ -1,0 +1,17 @@
+- name: Install dependencies
+  apt:
+    name: ["python3-pip", "git"]
+    state: present
+    update_cache: yes
+
+- name: Clone Flask app
+  git:
+    repo: 'https://github.com/your/flask-app.git'
+    dest: /var/www/flask-app
+
+- name: Install Flask
+  pip:
+    name: flask
+
+- name: Start Flask app
+  shell: nohup python3 /var/www/flask-app/app.py &
