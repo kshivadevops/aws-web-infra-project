@@ -18,26 +18,43 @@ The project is organized into several components:
 aws-web-infra-project
 
 1.terraform
+
  a. main.tf # Main Terraform configuration
+ 
  b. variables.tf # Variables for Terraform
+ 
  c. outputs.tf # Terraform outputs
+ 
  d. backend.tf # Backend configuration for Terraform state
  
 2.ansible
+
  a.inventory.ini # Ansible inventory for EC2 instance
+ 
  b.playbook.yml # Ansible playbook to install and configure software
+ 
  c.roles
+ 
      a.nginx/tasks/main.yml # Install and configure Nginx
+     
      b.flask/tasks/main.yml # Deploy Flask app
      
+     
 3.python-scripts
+
  a.log_monitor.py # Monitor Nginx access logs
+ 
  b.health_check.py # Health check for Flask app
+ 
  c.backup_db.py # Backup MySQL database to S3
  
+ 
 4.linux-scripts
+
  a. rotate_logs.sh # Rotate Nginx logs
+ 
  b.cron_setup.sh # Set up cron jobs for regular tasks
+ 
 5. README.md # Project documentation
 
 
