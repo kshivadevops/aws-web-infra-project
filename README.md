@@ -1,6 +1,3 @@
-Here’s a README.md template for your project that explains the setup, structure, and usage of the infrastructure. You can modify or add additional details as needed.
-
-README.md
 
 # AWS Web Infrastructure Project
 
